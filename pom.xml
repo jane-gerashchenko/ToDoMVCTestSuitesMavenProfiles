@@ -62,6 +62,7 @@
                         </property>
                     </properties>
                 </configuration>
+
                 <dependencies>
                     <dependency>
                         <groupId>org.aspectj</groupId>
@@ -105,15 +106,15 @@
         <profile>
             <id>smoke</id>
             <properties>
-                <test.includeCategories>com.Smoke</test.includeCategories>
-                <test.excludeCategories></test.excludeCategories>
+                <test.includeCategories>com.todomvc.categories.Smoke</test.includeCategories>
+                <test.excludeCategories>com.todomvc.categories.Buggy</test.excludeCategories>
             </properties>
         </profile>
 
         <profile>
             <id>buggy</id>
             <properties>
-                <test.includeCategories>com.Buggy</test.includeCategories>
+                <test.includeCategories>com.todomvc.categories.Buggy</test.includeCategories>
                 <test.excludeCategories></test.excludeCategories>
             </properties>
         </profile>
@@ -122,7 +123,7 @@
             <id>acceptance</id>
             <properties>
                 <test.includeCategories></test.includeCategories>
-                <test.excludeCategories>com.Smoke</test.excludeCategories>
+                <test.excludeCategories>com.todomvc.categories.Smoke</test.excludeCategories>
             </properties>
         </profile>
     </profiles>
