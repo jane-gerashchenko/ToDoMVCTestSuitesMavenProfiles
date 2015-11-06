@@ -126,6 +126,14 @@
                 <test.excludeCategories>com.todomvc.categories.Smoke</test.excludeCategories>
             </properties>
         </profile>
+
+        <profile>
+            <id>all</id>
+            <properties>
+                <test.includeCategories></test.includeCategories>
+                <test.excludeCategories></test.excludeCategories>
+            </properties>
+        </profile>
     </profiles>
 
 </project>
